@@ -75,7 +75,8 @@ pipeline {
       stage ('k8s crediential') {
         steps {  
             kubernetesDeploy configs: 'kubernatesfile.yaml', enableConfigSubstitution: false, kubeConfig: [path: ''], kubeconfigId: 'kubernates', secretName: '', ssh: [sshCredentialsId: '*', sshServer: ''], textCredentials: [certificateAuthorityData: '', clientCertificateData: '', clientKeyData: '', serverUrl: 'https://']
-        
+      
+      
         }          
       }
     }
