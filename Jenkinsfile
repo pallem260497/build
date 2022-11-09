@@ -16,7 +16,7 @@ pipeline {
           sh 'ls -lr'
         } 
       }
-      stage ('maven') {
+      /*stage ('maven') {
         steps {
           sh 'mvn clean package'
         } 
@@ -79,6 +79,6 @@ pipeline {
       
       
         }          
-      }
+      }*/
     }
 }
