@@ -3,7 +3,7 @@ pipeline {
   tools {
       jdk 'jdk11'
       git 'Default'
-      
+      maven 'maven3.8.6'
   }
     stages {
       stage ('gitclone') {
