@@ -1,4 +1,4 @@
-FROM alpine
+FROM tomcat:latest
 LABEL MAINTAINER pallem260497@gmail.com
 COPY target/webapp.war /usr/tomcat/webapps/
 EXPOSE 8082
